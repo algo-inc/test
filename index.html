@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" ; content="width=device-width">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="#">
+                <img src="image/logo.webp" alt="">
+            </a>
+            <h1>Суши-шмастер</h1>
+        </div>
+        <button class="order">
+            Сделать заказ
+        </button>
+    </div>
+</div>
+
+</div>
+<div class="container">
+    <h1>Суши-шастер - лучшее, что есть в твоем городе Порадуй себя и своих близких</h1>
+    <p class="subtitle">Ниже представлены наши самые популярные позиции за последние полгода работы на карантине</p>
+    <h2>Актуальные позиции</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="image/product1.webp" alt="">
+            <div class="product-list">
+                <h3>Гринобль ролл</h3>
+                <p>Закажи сей вкусный ролл,Он украсит ваш стол,
+                    Он порадует ваш глаз,
+                    Получи скорей экстаз!</p>
+                <a class="order-button" href="#">заказать</a>
+            </div>
+
+        </div>
+        <div class="product-card">
+            <img src="image/get-file-_1_.webp" alt="">
+            <div class="product-list">
+                <h3>Гринобль ролл</h3>
+                <p>Закажи сей вкусный ролл,Он украсит ваш стол,
+                    Он порадует ваш глаз,
+                    Получи скорей экстаз!</p>
+                <a class="not-available-order" href="#">Недоступно к заказу</a>
+            </div>
+
+        </div>
+        <div class="product-card">
+            <img src="image/get-file-_3_.webp" alt="">
+            <div class="product-list">
+                <h3>Гринобль ролл</h3>
+                <p>Закажи сей вкусный ролл,Он украсит ваш стол,
+                    Он порадует ваш глаз,
+                    Получи скорей экстаз!</p>
+                <a class="not-available-order" href="#">Недоступно к заказу</a>
+            </div>
+        </div>
+        <div class="product-card large-product-card">
+            <div class="banner-card">
+                <img src="image/get-file-_2_.webp" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper">
+    <h2 class="slider-title">Самые выгодные предложения</h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/slide3.webp" alt=""></div>
+            <div class="swiper-slide"><img src="image/slide2.webp" alt=""></div>
+            <div class="swiper-slide"><img src="image/slide1.webp" alt=""></div>
+        </div>
+    </div>
+    <div class="pagination-and-navigation">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next">
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+            el: '.swiper-pagination'
+        }
+    });
+</script>
+<div class="copyright" id="copyright"></div>
+<script>
+    var copyright = document.getElementById('copyright');
+    copyright.innerText = 'Copyright ' + new Date().getFullYear();
+</script>
+</body>
+</html>

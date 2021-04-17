@@ -66,120 +66,246 @@ textarea,
 select {
     font: inherit;
 }
-.container{
-    width: 100%;
+
+.container {
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
-.header-container{
+.header-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row wrap;
 }
-.header{
+
+
+
+.header {
     width: 100%;
-    background-image:url("/image/header-bg.webp");
+    background: #0072bc;
     align-items: center;
 }
+
 .order {
-margin-right: 18px;
-    padding: 0;
+    margin-right: 18px;
     border: none;
     background-color: #f36523;
     padding: 5px;
     color: white;
 }
+
+@media (max-width: 600px) {
+    .logo {
+        margin: auto;
+    }
+    .order {
+        min-width: 200px;
+        margin: 0 auto 10px;
+    }
+}
+
 .order a {
     margin: 10px;
     text-decoration: none;
     color: white;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
+
 .logo h1 {
     color: white;
 }
-.logo img{
-height: 60px;
+
+.logo img {
+    height: 60px;
     width: 80px;
     padding: 10px;
 
 }
-.container h1{
-    line-height: 0.9em;
+
+h1 {
+    line-height: 1.3;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.product-card{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
+    font-size: 28px;
 }
 
-.card{
+.subtitle {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 990px) {
+    h2 {
+        text-align: left;
+    }
+}
+
+.products {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 25px;
+    border-radius: 10px;
     text-align: center;
+    max-width: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.large-product-card {
+    max-width: 370px;
+}
+
+.product-card:not(.large-product-card) {
     border: black solid 1px;
-    border-radius: 10px;
-    max-width: 350px;
-    width: 100%;
 }
-.banner-card{
+
+@media (min-width: 990px) {
+    .products {
+        justify-content: space-between;
+    }
+
+    .product-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.banner-card {
     text-align: center;
-    border-radius: 10px;
     max-width: 350px;
     width: 100%;
 }
-.card img{
+
+.product-card img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    width: 300px;
 }
-.card h3{
+
+.product-card h3 {
     margin-top: 8px;
     margin-bottom: 8px;
-   color: #8e0000;
+    color: #8e0000;
 }
-.card p {
+
+.product-card p {
     margin-right: auto;
     margin-left: auto;
     max-width: 190px;
     margin-bottom: 10px;
 }
-.card a {
+
+.product-card a {
     padding: 5px;
     margin-bottom: 10px;
     text-decoration: none;
     font-size: 18px;
 }
-.order-button{
+
+.order-button {
     color: #359945;
 }
-.not-available-order{
+
+.not-available-order {
     color: #444444;
 }
 
-.swiper{
+.swiper {
+    padding: 30px 0 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: #6dcff6;
-    margin-bottom: 50px;
 }
+
+.slider-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    margin: 0 20px;
+    opacity: 1 !important;
+}
+
+.swiper-pagination {
+    left: 0;
+    right: 0;
+}
+
 .swiper-container {
-    margin-top: 60px;
-    margin-bottom: 0;
-    width: 600px;
-    height: 300px;
-}
-.swiper-nav{
-   margin-top: 60px;
+    margin-bottom: 30px;
+    max-width: 900px;
+    width: 100%;
 }
 
 
+.pagination-and-navigation {
+    max-width: 350px;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background-image: url('../image/right-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    top: 10px;
+}
+
+.swiper-button-prev {
+    transform: rotateY(180deg);
+}
+
+.copyright {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px;
+    letter-spacing: 0.2px;
+}
+
+@media (min-width: 900px) {
+    .swiper {
+        padding: 70px 0 100px;
+    }
+
+    .swiper-container {
+        margin-bottom: 50px;
+    }
+
+    .slide-title {
+        margin-bottom: 60px;
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+}
