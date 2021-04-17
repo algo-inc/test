@@ -1,0 +1,185 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    background-image:url("/image/header-bg.webp");
+    align-items: center;
+}
+.order {
+margin-right: 18px;
+    padding: 0;
+    border: none;
+    background-color: #f36523;
+    padding: 5px;
+    color: white;
+}
+.order a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1 {
+    color: white;
+}
+.logo img{
+height: 60px;
+    width: 80px;
+    padding: 10px;
+
+}
+.container h1{
+    line-height: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.product-card{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.card{
+    text-align: center;
+    border: black solid 1px;
+    border-radius: 10px;
+    max-width: 350px;
+    width: 100%;
+}
+.banner-card{
+    text-align: center;
+    border-radius: 10px;
+    max-width: 350px;
+    width: 100%;
+}
+.card img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    width: 300px;
+}
+.card h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+   color: #8e0000;
+}
+.card p {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 190px;
+    margin-bottom: 10px;
+}
+.card a {
+    padding: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.order-button{
+    color: #359945;
+}
+.not-available-order{
+    color: #444444;
+}
+
+.swiper{
+    display: flex;
+    align-items: center;
+    background-color: #6dcff6;
+    margin-bottom: 50px;
+}
+.swiper-container {
+    margin-top: 60px;
+    margin-bottom: 0;
+    width: 600px;
+    height: 300px;
+}
+.swiper-nav{
+   margin-top: 60px;
+}
+
+
